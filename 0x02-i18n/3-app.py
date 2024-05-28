@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
 """doc module"""
 from flask import Flask, render_template, request
-from flask_babel import Babel, _
+from flask_babel import Babel
 
 
 class Config(object):
     """doc class"""
-
     LANGUAGES = ["en", "fr"]
     BABEL_DEFAULT_LOCALE = "en"
     BABEL_DEFAULT_TIMEZONE = "UTC"
@@ -26,7 +25,7 @@ def get_locale():
 @app.route('/')
 def index():
     """doc route"""
-    return render_template('2-index.html', _=_)
+    return render_template('3-index.html')
 
 
 if __name__ == '__main__':
