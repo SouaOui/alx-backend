@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """doc doc"""
+from typing import Tuple
 
 
-def index_range(page, page_size):
+def index_range(page: int, page_size: int) -> Tuple[int]:
     """doc """
     start = (page - 1) * page_size
     end = start + page_size
